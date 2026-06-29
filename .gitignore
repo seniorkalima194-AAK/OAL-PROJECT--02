@@ -1,0 +1,79 @@
+# ============================================
+# ADAPTIVE LEARNING SYSTEM — Git Ignore
+# ============================================
+
+# --- Environment files ---
+.env
+.env.local
+.env.*.local
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+*.pyc
+
+# --- Database ---
+*.db
+*.sqlite3
+learning_system.db
+
+# --- Alembic ---
+backend/database/migrations/__pycache__/
+
+# --- Node / Frontend ---
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+.vite/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Storage uploads ---
+# Ignore contents but keep folder structure
+storage/images/*
+storage/documents/*
+storage/documents/lessons/*
+storage/documents/notes/*
+storage/documents/pdfs/*
+storage/videos/*
+
+# Keep folder structure using .gitkeep
+!storage/images/.gitkeep
+!storage/documents/.gitkeep
+!storage/documents/lessons/.gitkeep
+!storage/documents/notes/.gitkeep
+!storage/documents/pdfs/.gitkeep
+!storage/videos/.gitkeep
+
+# --- Deployment ---
+deployment/local_server/*.log
+deployment/local_server/*.pid
+
+# --- Docs ---
+# Keep docs tracked — do not ignore
