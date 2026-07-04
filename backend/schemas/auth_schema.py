@@ -3,6 +3,8 @@ Pydantic schemas for authentication requests (login/register).
 """
 from pydantic import BaseModel, EmailStr, Field
 
+#usajili wa mwanafunzi
+
 class RegisterRequest(BaseModel):
     email: EmailStr
     password: str = Field(min_length=8)

@@ -1,6 +1,7 @@
 """student_schema.py
 Pydantic schema for Student input/output validation.
 """
+
 from datetime import date as date_type, time as time_type
 from typing import Optional, List
 from pydantic import BaseModel, EmailStr
