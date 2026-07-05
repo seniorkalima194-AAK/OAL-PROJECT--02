@@ -5,6 +5,7 @@ from datetime import date as date_type
 from typing import Optional
 from pydantic import BaseModel
 
+#maendeleo ya vipindi
 class CourseProgressResponse(BaseModel):
     course_id: str
     total_lessons: int

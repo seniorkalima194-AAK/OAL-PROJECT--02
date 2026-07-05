@@ -8,11 +8,13 @@ from pydantic import BaseModel, EmailStr, Field
 class RegisterRequest(BaseModel):
     email: EmailStr
     password: str = Field(min_length=8)
-
+    
+# login ya mwanafunzi
 class LoginRequest(BaseModel):
     email: EmailStr
     password: str
 
+#response ya mwanafunzi
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"

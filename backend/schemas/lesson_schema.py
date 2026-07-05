@@ -4,6 +4,7 @@ Pydantic schema for lessons: id, title, content metadata.
 from typing import Optional, List
 from pydantic import BaseModel
 
+#responcs vipindi kwa mwanafunzi
 class LessonResourceResponse(BaseModel):
     id: str
     title: str
@@ -12,7 +13,8 @@ class LessonResourceResponse(BaseModel):
 
     class Config:
         from_attributes = True
-
+        
+#Taarifa za vipindi
 class LessonResponse(BaseModel):
     id: str
     title: str
@@ -27,6 +29,7 @@ class LessonResponse(BaseModel):
     class Config:
         from_attributes = True
 
+#kutengeneza vipindi kwa mwanafunzi
 class LessonCreateRequest(BaseModel):
     title: str
     content: Optional[str] = None
@@ -35,6 +38,7 @@ class LessonCreateRequest(BaseModel):
     order_index: int
     is_preview: bool = False
 
+#maendeleo ya mwanafuzi
 class ProgressUpdateRequest(BaseModel):
     progress_seconds: int
 
