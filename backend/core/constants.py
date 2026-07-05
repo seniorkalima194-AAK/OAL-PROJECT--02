@@ -1,22 +1,35 @@
 """constants.py
 Core constants for the backend, e.g., default DB path and other literals.
 """
+from enum import Enum
 
-# ADAPTIVE LEARNING SYSTEM — System Constants
-# Sync required with: frontend/utils/constants.js
+# --- Auth ---
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+REFRESH_TOKEN_EXPIRE_DAYS = 7
+TOKEN_TYPE = "bearer"
 
+# --- Password hashing ---
+BCRYPT_ROUNDS = 12
 
 # --- Roles ---
-STUDENT_ROLE: str = "student"
-ADMIN_ROLE: str = "admin"
+class UserRole(str, Enum):
+    ADMIN = "admin"
+    STUDENT = "student"
+
+
+
+# --- Headers ---
+REQUEST_ID_HEADER = "X-Request-ID"
+
 
 # --- Difficulty Levels ---
 DIFFICULTY_LEVELS: dict = {
-    1: "Beginner",
-    2: "Elementary",
-    3: "Intermediate",
-    4: "Advanced",
-    5: "Expert"
+    LEVEL1: "Beginner",
+    LEVEL2: "Elementary",
+    LEVEL3: "Intermediate",
+    LEVEL4: "Advanced",
+    LEVEL5: "Expert"
 }
 
 # --- Adaptive Engine Thresholds ---

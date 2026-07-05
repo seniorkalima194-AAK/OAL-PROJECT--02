@@ -1,4 +1,41 @@
-"""question_schema.py
-Pydantic schema for question objects used in quizzes.
+"""lesson_schema.py
+Pydantic schema for lessons: id, title, content metadata.
 """
+from typing import Optional, List
+from pydantic import BaseModel
+
+class LessonResourceResponse(BaseModel):
+    id: str
+    title: str
+    file_url: str
+    file_type: Optional[str]
+
+    class Config:
+        from_attributes = True
+
+class LessonResponse(BaseModel):
+    id: str
+    title: str
+    slug: str
+    content: Optional[str]
+    video_url: Optional[str]
+    duration_seconds: int
+    order_index: int
+    is_preview: bool
+    resources: List[LessonResourceResponse] = []
+
+    class Config:
+        from_attributes = True
+
+class LessonCreateRequest(BaseModel):
+    title: str
+    content: Optional[str] = None
+    video_url: Optional[str] = None
+    duration_seconds: int = 0
+    order_index: int
+    is_preview: bool = False
+
+class ProgressUpdateRequest(BaseModel):
+    progress_seconds: int
+
 
