@@ -1,5 +1,3 @@
-"""API routes package."""
-
 __all__ = [
     "auth_routes",
     "lesson_routes",

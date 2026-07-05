@@ -4,9 +4,7 @@ from backend.api.schemas import (
     UserRegisterRequest,
     ResponseEnvelope,
 )
-
 router = APIRouter()
-
 @router.post("/register", response_model=ResponseEnvelope, status_code=status.HTTP_201_CREATED)
 async def register(payload: UserRegisterRequest):
     return ResponseEnvelope(data={"message": f"Registration successful for {payload.email}"})
