@@ -34,3 +34,4 @@ class AchievementResponse(BaseModel):
     icon_url: Optional[str]
     earned_at: str
 
+
