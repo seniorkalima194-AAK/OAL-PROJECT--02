@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=D4AF37&height=220&section=header&text=Offline-adaptive%20learning%20website&fontSize=55&fontColor=2C1A00&fontAlignY=38&desc=A%20website%20for%20upgrading%20performance%20of%20students&descAlignY=58&descSize=18" width="100%"/>
+</div>
+
 # 🎓 Adaptive Learning System
 
 > ALS — An offline-first intelligent learning platform that personalises lesson sequences and quiz difficulty based on individual student performance — no internet connection required at runtime.
