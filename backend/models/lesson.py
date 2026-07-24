@@ -1,3 +1,6 @@
+"""lesson.py
+Model for Lesson: id, subject_id, title, content references (video/docs), estimated_time.
+"""
 from sqlalchemy import Column, Integer,String, Text
 from database import Base
 
