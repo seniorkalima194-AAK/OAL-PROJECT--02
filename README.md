@@ -2,6 +2,19 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=D4AF37&height=220&section=header&text=Offline-adaptive%20learning%20website&fontSize=55&fontColor=2C1A00&fontAlignY=38&desc=A%20website%20for%20upgrading%20performance%20of%20students&descAlignY=58&descSize=18" width="100%"/>
 </div>
 
+### *Empowering Personalized Education Without Internet Connectivity*
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Status-Under%20Development-0A66C2?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Version-1.0-blueviolet?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+
+</p>
+
 # 🎓 Adaptive Learning System
 
 > ALS — An offline-first intelligent learning platform that personalises lesson sequences and quiz difficulty based on individual student performance — no internet connection required at runtime.
