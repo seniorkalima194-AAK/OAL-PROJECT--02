@@ -5,7 +5,7 @@ Fields: student_id, lesson_id, completed, score, completed_at.
 """
 
 from datetime import datetime
-from typing import Dict, Optional
+from typing import Dict, Optional, Any
 
 
 class Progress:
@@ -48,11 +48,11 @@ class Progress:
         self.score = 0.0
         self.completed_at = None
 
-    def progress_data(self) -> Dict[str, any]:
+    def progress_data(self) -> Dict[str, Any]:
         """Export progress data as a dictionary.
         
         Returns:
-            Dict[str, any]: Dictionary containing all progress information.
+            Dict[str, Any]: Dictionary containing all progress information.
         """
         return {
             "student_id": self.student_id,
