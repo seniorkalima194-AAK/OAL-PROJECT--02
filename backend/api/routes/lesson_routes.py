@@ -1,3 +1,7 @@
+"""lesson_routes.py
+Router for lesson-related API endpoints. Should include endpoints for listing and retrieving lessons.
+"""
+
 from fastapi import APIRouter
 from backend.api.schemas import ResponseEnvelope, LessonCreateRequest, LessonUpdateRequest
 
