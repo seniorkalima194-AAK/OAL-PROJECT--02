@@ -50,6 +50,11 @@ MSG_NOT_FOUND: str = "Resource not found"
 MSG_UNAUTHORIZED: str = "Authentication required"
 MSG_FORBIDDEN: str = "You do not have permission to perform this action"
 MSG_VALIDATION_ERROR: str = "Validation failed"
+LESSON_NOT_FOUND_MSG: str = "Lesson with id {id} not found."
+LESSON_CREATE_SUCCESS_MSG: str = "Lesson '{title}' created successfully."
+LESSON_REPLACE_SUCCESS_MSG: str = "Lesson replaced successfully."
+LESSON_UPDATE_SUCCESS_MSG: str = "Lesson updated successfully."
+LESSON_PLACEHOLDER_TITLE: str = "Placeholder Lesson Title"
 
 # --- Progress Status ---
 PROGRESS_NOT_STARTED: str = "not_started"
