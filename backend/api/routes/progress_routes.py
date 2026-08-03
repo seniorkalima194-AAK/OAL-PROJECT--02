@@ -1,3 +1,6 @@
+"""progress_routes.py
+Router for progress-related endpoints and reports.
+"""
 from fastapi import APIRouter, Depends
 from backend.api.schemas import ResponseEnvelope
 from backend.api.dependencies.auth import get_admin_user, get_current_user
